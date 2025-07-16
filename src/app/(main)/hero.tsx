@@ -2,6 +2,7 @@ import React from "react";
 import heroImage from "@/assets/mmHeroImage.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,7 +14,9 @@ export default function Hero() {
               At MM Rahman, we provide tailored solutions to help businesses
               grow and thrive in today&apos;s fast-paced world.
             </h2>
-            <Button>Explore Now</Button>
+            <Link href="#our-brands">
+              <Button>Explore Now</Button>
+            </Link>
           </div>
           <div>
             <Image src={heroImage} alt="" className="w-full object-cover" />

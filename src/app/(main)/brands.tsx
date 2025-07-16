@@ -24,13 +24,13 @@ const brandsData = [
 
 export default function Brands() {
   return (
-    <section className="py-section">
+    <section className="py-section" id="our-brands">
       <div className="wrapper">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-start mb-8 lg:mb-16">
+          <div className="mb-3 lg:mb-0">
+            <h2 className="section-title text-[#0A0A0B]">Our Brands</h2>
+          </div>
           <div>
-            <h2 className="section-title text-[#0A0A0B] mb-3 lg:mb-0">
-              Our Brands
-            </h2>
             <p className="section-description text-[#3A3A3F]">
               At MM Rahman LLC, we proudly operate two impactful brands—Rabfy, a
               global print-on-demand marketplace for creators, and Vsenk, an
@@ -41,7 +41,7 @@ export default function Brands() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mt-8 lg:mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
           {brandsData.map((brand) => (
             <div key={brand.id} className="bg-[#F5F5F6] p-8">
               <div className="mb-8">
